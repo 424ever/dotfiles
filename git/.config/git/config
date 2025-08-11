@@ -1,3 +1,5 @@
+[include]
+	path = ~/.config/delta/catppuccin.gitconfig
 [alias]
 	ap = add --patch
 	lg = log --pretty='%C(red)%h%Creset%C(yellow)%d%Creset %s %C(cyan)(%ar)%Creset'
@@ -48,4 +50,6 @@
 [rerere]
 	enabled = true
 	autoupdate = true
-
+[delta]
+	navigate = true
+	features = catppuccin-mocha
