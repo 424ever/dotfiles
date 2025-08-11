@@ -1,0 +1,51 @@
+[alias]
+	ap = add --patch
+	lg = log --pretty='%C(red)%h%Creset%C(yellow)%d%Creset %s %C(cyan)(%ar)%Creset'
+	lgg = lg --graph
+	lga = lg --graph --all
+	st = status -s
+	lst = status
+	ca = commit -a
+	cm = commit -m
+	c = commit
+	cam = commit -am
+	new = lg master..
+	newdiff = diff master..
+	miss= lg ..master
+[core]
+	editor = nvim
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[rebase]
+	autoSquash = true
+	autoStash = true
+[merge]
+	conflictStyle = "zdiff3"
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = master
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+[fetch]
+	prune = true
+	all = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+
