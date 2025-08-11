@@ -40,6 +40,7 @@
 [push]
 	default = simple
 	autoSetupRemote = true
+	gpgSign = if-asked
 [fetch]
 	prune = true
 	all = true
