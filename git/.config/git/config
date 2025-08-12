@@ -53,4 +53,5 @@
 	autoupdate = true
 [delta]
 	navigate = true
+	true-color = always
 	features = catppuccin-mocha
