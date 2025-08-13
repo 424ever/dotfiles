@@ -1,0 +1,65 @@
+gui:
+  timeFormat: 2006-01-02
+  shortTimeFormat: 15:04
+  showNumstatInFilesView: true
+  showRandomTip: false
+  showIcons: false
+  commitAuthorShortLength: 4
+  showBranchCommitHash: true
+  showDivergenceFromBaseBranch: none
+  expandFocusedSidePanel: true
+  border: single
+# mocha
+  theme:
+    activeBorderColor:
+      - '#ea999c'
+      - bold
+    inactiveBorderColor:
+      - '#a5adce'
+    optionsTextColor:
+      - '#8caaee'
+    selectedLineBgColor:
+      - '#414559'
+    cherryPickedCommitBgColor:
+      - '#51576d'
+    cherryPickedCommitFgColor:
+      - '#ea999c'
+    unstagedChangesColor:
+      - '#e78284'
+    defaultFgColor:
+      - '#c6d0f5'
+    searchingActiveBorderColor:
+      - '#e5c890'
+
+  authorColors:
+    '*': '#babbf1'
+# latte
+#  theme:
+#    activeBorderColor:
+#      - '#e64553'
+#      - bold
+#    inactiveBorderColor:
+#      - '#6c6f85'
+#    optionsTextColor:
+#      - '#1e66f5'
+#    selectedLineBgColor:
+#      - '#ccd0da'
+#    cherryPickedCommitBgColor:
+#      - '#bcc0cc'
+#    cherryPickedCommitFgColor:
+#      - '#e64553'
+#    unstagedChangesColor:
+#      - '#d20f39'
+#    defaultFgColor:
+#      - '#4c4f69'
+#    searchingActiveBorderColor:
+#      - '#df8e1d'
+#  
+#  authorColors:
+#    '*': '#7287fd'
+git:
+  branchLogCmd: git lgg --color=always {{branchName}} --
+  allBranchesLogCmds:
+    - git lga --color=always --
+  merging:
+    args: --no-ff
