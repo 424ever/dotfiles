@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+stow bat eza git lazygit ripgrep shell tmux zoxide || exit 1
