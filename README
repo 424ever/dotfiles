@@ -1,0 +1,85 @@
+dotfiles
+========
+
+my configuration files
+
+
+installation
+------------
+
+installation is done using GNU stow[1]
+
+ $ git clone git@github.com:424ever/dotfiles.git ~/dotfiles
+ $ cd ~/dotfiles
+ $ ./install           # install everything
+ $ stow git            # install only git configuration
+
+
+dependencies
+------------
+
+some configuration expects software to be installed on your system
+
+bat/
+  bat[2]
+  bat-extras[11]
+
+  shell/
+
+eza/
+  eza[7]
+
+  shell/
+
+git/
+  git[3]
+  delta[4]
+
+lazygit/
+  git[3]
+  lazygit[5]
+
+  git/
+
+ripgrep/
+  ripgrep[8]
+
+  shell/
+
+shell/
+  fish[6]
+
+tmux/
+  tmux[9]
+
+  shell/
+
+zoxide/
+  zoxide[10]
+
+  shell/
+
+
+notes
+-----
+
+some maybe unexpected things
+
+ - installing git/ creates `~/.config/git/config`. you can add configuration
+   like `user.name` and `user.email` in your `~/.gitconfig`
+ - installing bat/, eza/, lazygit/, ripgrep/, tmux/, or zoxide/ creates shell
+   configuration in `~/.config/fish/conf.d`
+ - installing tmux/ means that tmux will automatically start with fish
+
+[1] https://gnu.org/software/stow
+[2] https://github.com/sharkdp/bat
+[3] https://git-scm.com
+[4] https://github.com/dandavison/delta
+[5] https://github.com/jesseduffield/lazygit
+[6] https://fishshell.com
+[7] https://github.com/eza-community/eza
+[8] https://github.com/BurntSushi/ripgrep
+[9] https://github.com/tmux/tmux
+[10] https://github.com/ajeetdsouza/zoxide
+[11] https://github.com/eth-p/bat-extras
+
