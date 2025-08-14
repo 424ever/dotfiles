@@ -9,7 +9,7 @@ installation
 
 installation is done using GNU stow[1]
 
- $ git clone git@github.com:424ever/dotfiles.git ~/dotfiles
+ $ git clone --recurse-submodules git@github.com:424ever/dotfiles.git ~/dotfiles
  $ cd ~/dotfiles
  $ ./install           # install everything
  $ stow git            # install only git configuration
@@ -30,6 +30,9 @@ eza/
   eza[7]
 
   shell/
+
+ghostty/
+  ghostty[12]
 
 git/
   git[3]
@@ -82,4 +85,4 @@ some maybe unexpected things
 [9] https://github.com/tmux/tmux
 [10] https://github.com/ajeetdsouza/zoxide
 [11] https://github.com/eth-p/bat-extras
-
+[12] https://github.com/ghostty-org/ghostty
