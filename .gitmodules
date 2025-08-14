@@ -1,3 +1,6 @@
 [submodule "subs/catppuccin/ghostty"]
 	path = subs/catppuccin/ghostty
 	url = git@github.com:catppuccin/ghostty.git
+[submodule "subs/eza-themes"]
+	path = subs/eza-themes
+	url = git@github.com:eza-community/eza-themes.git
