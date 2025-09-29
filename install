@@ -1,11 +1,12 @@
 #!/usr/bin/env sh
 
-stow bat \
-     eza \
-     ghostty \
-     git \
-     lazygit \
-     ripgrep \
-     shell \
-     tmux \
+stow --dotfiles \
+     bat        \
+     eza        \
+     ghostty    \
+     git        \
+     lazygit    \
+     ripgrep    \
+     shell      \
+     tmux       \
      zoxide || exit 1
