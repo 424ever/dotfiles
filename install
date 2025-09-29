@@ -2,6 +2,7 @@
 
 stow --dotfiles \
      bat        \
+     direnv     \
      eza        \
      ghostty    \
      git        \

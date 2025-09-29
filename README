@@ -26,6 +26,9 @@ bat/
 
   shell/
 
+direnv/
+  direnv[13]
+
 eza/
   eza[7]
 
