@@ -38,12 +38,14 @@ function fish_prompt --description 'Write out the prompt'
 	        set -l cmd "direnv status --json | jq -er .state.loadedRC.path"
 
 	        if eval $cmd > /dev/null
+	                echo ' ('
                         basename (eval $cmd)
+                        echo ')'
 	        end
 	end
     
         echo -n -s (set_color $prompt_color_time) "[" (date "+%H:%M") "] " \
 		   (set_color $color_cwd) (prompt_pwd)                     \
-                   (set_color $prompt_color_direnv) " "(prompt_direnv)     \
-		   $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
+                   (set_color $prompt_color_direnv) (prompt_direnv)        \
+		   (set_color brgreen) (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end
