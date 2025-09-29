@@ -30,8 +30,20 @@ function fish_prompt --description 'Write out the prompt'
 	# Write current time
 	set -q prompt_color_time
 	or set -g prompt_color_time brblack
+
+	set -q prompt_color_direnv
+	or set -g prompt_color_direnv brmagenta
+
+	function prompt_direnv
+	        set -l cmd "direnv status --json | jq -er .state.loadedRC.path"
+
+	        if eval $cmd > /dev/null
+                        basename (eval $cmd)
+	        end
+	end
     
         echo -n -s (set_color $prompt_color_time) "[" (date "+%H:%M") "] " \
-		   (set_color $color_cwd) (prompt_pwd)                    \
+		   (set_color $color_cwd) (prompt_pwd)                     \
+                   (set_color $prompt_color_direnv) " "(prompt_direnv)     \
 		   $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end

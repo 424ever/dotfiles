@@ -51,6 +51,7 @@ ripgrep/
 
 shell/
   fish[6]
+  direnv[13]
 
 tmux/
   tmux[9]
@@ -86,3 +87,4 @@ some maybe unexpected things
 [10] https://github.com/ajeetdsouza/zoxide
 [11] https://github.com/eth-p/bat-extras
 [12] https://github.com/ghostty-org/ghostty
+[13] https://direnv.net/
