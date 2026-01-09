@@ -12,7 +12,7 @@
 	c = commit
 	cam = commit -am
 	new = lg master..
-	newdiff = diff master..
+	newdiff = diff master...
 	miss= lg ..master
 [core]
 	editor = nvim
@@ -54,6 +54,6 @@
 [delta]
 	navigate = true
 	true-color = always
-	features = catppuccin-mocha
+	features = gruvbox-dark
 [submodule]
 	recurse = true
